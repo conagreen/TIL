@@ -7,8 +7,6 @@
 
 ### [ INDEX ]
 
-### 데이터베이스
-- [데이터베이스 첫걸음 정리](Database/데이터베이스_첫걸음.md)
-- [SQL 첫걸음 정리](Database/SQL_첫걸음.md)
+### Kotlin
 
-<br>
+- [코틀린 기초](Kotlin/코틀린 기초.md)
