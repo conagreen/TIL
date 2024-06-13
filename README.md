@@ -6,7 +6,10 @@
 </div>
 
 ### [ INDEX ]
+### Database
+
+- [RDBMS VS NoSQL](Database/RDBMS%20VS%20NoSQL.md)
 
 ### Kotlin
 
-- [코틀린 기초](Kotlin/코틀린 기초.md)
+- [코틀린 기초](Kotlin/코틀린%20기초.md)
