@@ -9,6 +9,7 @@
 ### Database
 
 - [RDBMS VS NoSQL](Database/RDBMS%20VS%20NoSQL.md)
+- [인덱스 기본](Database/인덱스%20기본.md)
 
 ### Kotlin
 
