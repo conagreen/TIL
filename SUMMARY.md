@@ -9,6 +9,10 @@
 ### **Kotlin**
 - [코틀린 기초](Kotlin/코틀린%20기초.md)
 
+### **아키텍처**
+- [EDA (Event Driven Architecture)](Architecture/EDA/README.md)
+  - [EDA란?](Architecture/EDA/EDA란.md)
+
 ### 개발 다이어리
 - [정기 결제를 위한 구독 스케줄러 구현](dev-diaries/quartz-scheduler/README.md)
     - [왜 Quartz Scheduler를 선택했을까?](dev-diaries/quartz-scheduler/step1%20쿼츠%20스케줄러%20도입.md)
