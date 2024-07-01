@@ -133,9 +133,10 @@ public class MyQuartz {
 
 위의 코드를 실행하면 아래와 같이 로그가 출력된다. 첫 번째 빨간 박스부터 분석해보겠다
 
-1. `Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.`
+`Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.`
 - ThreadPool에 대한 설정을 할 수 있지만, 하지 않으면 기본값으로 제공된다. 현재는 따로 설정을 하지 않았기 때문에 10개로 설정되어 있다.
-1. `Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.`
+
+`Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.`
 - JobStore 타입 역시 별다른 설정을 하지 않았기 때문에 기본 타입인 `RAMJobStore`로 설정되어 있다.
     - RAM JobStore: Scheduler Data를 메모리에 저장
     - JDBC JobStore: Scheduler Data를 DB에 저장
