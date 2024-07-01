@@ -81,7 +81,7 @@
     - Asynchronous
     - Loosly Coupled
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8be6267-6ca3-4baa-b99b-c114e535cf20/ba121005-5c73-4b97-bf32-85cfd78f81e5/Untitled.png)
+![img_1.png](img_1.png)
 
 # EDA 구성요소 및 장단점
 
@@ -111,7 +111,7 @@
 - 발행한 이벤트를 **보관**, 적절한 소비자에게 전달될 수 있도록 **라우팅**하는 역할을 담당
 - 대표적인 이벤트 브로커 - Rabbit MQ, 카프카 등
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b8be6267-6ca3-4baa-b99b-c114e535cf20/dfc10c83-917d-4d7f-8431-71d1b5b3f095/Untitled.png)
+![img_2.png](img_2.png)
 
 ## EDA 장점
 
