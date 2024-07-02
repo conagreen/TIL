@@ -13,6 +13,10 @@
 - [EDA (Event Driven Architecture)](Architecture/EDA/README.md)
   - [EDA란?](Architecture/EDA/EDA란.md)
 
+### 북스터디
+- [함수형 프로그래밍 with 자바](북스터디/함수형%20프로그래밍%20with%20자바/README.md)
+  - [01 함수형 프로그래밍 소개](북스터디/함수형%20프로그래밍%20with%20자바/01%20함수형%20프로그래밍%20소개.md)
+
 ### 개발 다이어리
 - [정기 결제를 위한 구독 스케줄러 구현](dev-diaries/quartz-scheduler/README.md)
     - [왜 Quartz Scheduler를 선택했을까?](dev-diaries/quartz-scheduler/step1%20쿼츠%20스케줄러%20도입.md)
