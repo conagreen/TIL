@@ -12,7 +12,7 @@
 - Event Driven 아키텍처는 특정 서비스에서 다른 서비스가 관심을 가질 수 있는 작업을 수행할 때 해당 서비스는 이 작업을 이벤트로써 **이벤트 스토어(메세지 Queue)** 에 **기록(발행)**
 - 다른 서비스는 기록된 이벤트들을 **구독**, 자신들(MicroService)의 작업을 수행
 
-![EDA](img_4.png)
+![EDA](image/img_4.png)
 
 ## Event Store
 이벤트 스토어는 시간이 지나도 이벤트를 지속하고 관리하는 데 사용되는 데이터베이스 또는 저장소 메커니즘
@@ -24,7 +24,7 @@
 ## 이벤트 처리 방식
 **[ 대기열(Queue) 방식 - Point to Point ]**
 
-![대기열 방식](img_3.png)
+![대기열 방식](image/img_3.png)
 
 대기열 방식은 최초 Consumer가 가져간 메세지는 다른 소비자가 가져갈 수 없음 (**소비의 개념**)
 
@@ -33,7 +33,7 @@
 
 **[ 토픽(Topic) 방식 - Pub-Sub ]**
 
-![토픽 방식](img.png)
+![토픽 방식](image/img.png)
 
 Pub-Sub은 모든 구독자(subscriber)들이 메세지를 최소 1번 이상(복제본) 가져갈 수 있음
 
@@ -87,7 +87,7 @@ Zero-Payload 방식은 이벤트 전송처리 방식의 하나로 이벤트 메�
 
 - 이벤트가 수신되면 소비자는 Source System이나 Database에서 실제 필요한 데이터를 요청
 
-![Zero-Payload 방식](img_5.png)
+![Zero-Payload 방식](image/img_5.png)
 
 - 메세지 발행자는 변경 시 모든 데이터를 보낼 수 없음 (필요X) - 구독자마다 요구하는 DataSet이 다름
 - 구독자(소비자) 서비스는 이벤트 수신 시점 약속된 API로 조회, 필요한 데이터만 수신 → 반영
@@ -121,7 +121,7 @@ Zero-Payload 방식은 페이로드 크기를 최소화하며, 책임을 분리�
 
 **[ 적용 사례 - 배달의 민족 가게 / 업주 정보 변경 ]**
 
-![출처: 배달의민족 마이크로서비스 여행기 - https://www.youtube.com/watch?v=BnS6343GTkY](img_6.png)
+![출처: 배달의민족 마이크로서비스 여행기 - https://www.youtube.com/watch?v=BnS6343GTkY](image/img_6.png)
 
 **가게 정보의 변경 이벤트 발행**
 
@@ -189,13 +189,13 @@ EDM은 MSA가 적용된 시스템에서 **이벤트** 발생 시 해당 **이벤
 
 특정 테이블의 레코드가 갱신될 때 이벤트 테이블에 해당 이벤트 정보를 기록하는 방식
 
-![로컬 트랜잭션](img_7.png)
+![로컬 트랜잭션](image/img_7.png)
 
 **[ DB 트랜잭션 로그 기반의 이벤트 발행하기 (트랜잭션 로그 테일링 패턴) ]**
 
 트랜잭션 로그 마이너(Transaction log miner)가 이벤트 퍼블리셔의 역할을 담당. DBMS의 트랜잭션 로그의 변경을 감지하여 이벤트 발행
 
-![DB 트랜잭션 로그](img_8.png)
+![DB 트랜잭션 로그](image/img_8.png)
 
 **[ 이벤트 소싱 사용하기 ]**
 
@@ -203,9 +203,9 @@ EDM은 MSA가 적용된 시스템에서 **이벤트** 발생 시 해당 **이벤
 
 비즈니스 개체의 현재 상태를 저장하는 대신 상태를 변경하는 **모든 이벤트 내역을 목록으로 저장**
 
-![이벤트 소싱](img_9.png)
+![이벤트 소싱](image/img_9.png)
 
-![출처: https://sabarada.tistory.com/231](img_10.png)
+![출처: https://sabarada.tistory.com/231](image/img_10.png)
 
 # CQRS Pattern
 
@@ -223,7 +223,7 @@ CQRS 패턴 - Command-Query Responsibility Segregation
 - **물리적으로 2개의 데이터베이스를 사용하여 읽기 및 쓰기 데이터베이스를 분리하는 것이 가장 이상적**
 - **읽기 집약적인 애플리케이션인 경우 쿼리에 최적화된 사용자 정의 데이터 스키마를 별도로 구성**
 
-![CQRS Pattern](img_11.png)
+![CQRS Pattern](image/img_11.png)
 
 Query Service 에는 No-SQL 을 사용하고, Command Service 에는 관계형 데이터베이스를 사용. 읽기 및 쓰기 데이터베이스 유형에 **서로 다른 데이터베이스를 사용할 수 있음**
 
@@ -242,7 +242,7 @@ Query Service 에는 No-SQL 을 사용하고, Command Service 에는 관계형 �
 - Request - Response Model
 - 예) **결제 서비스, 인증 서비스, 재고 관리 서비스 등**
 
-![동기](img_12.png)
+![동기](image/img_12.png)
 
 ## 비동기(Asynchronous)
 
@@ -253,4 +253,4 @@ Query Service 에는 No-SQL 을 사용하고, Command Service 에는 관계형 �
 - Message - 메세지, Publish - 발행, Subscribe - 구독
 - 예) **이벤트 알림 서비스, 이미지, 파일 프로세싱 등**
 
-![비동기](img_13.png)
+![비동기](image/img_13.png)

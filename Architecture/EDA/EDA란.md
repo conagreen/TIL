@@ -77,7 +77,7 @@
 - Asynchronous
 - Loosly Coupled
 
-![API vs EDA](img_1.png)
+![API vs EDA](image/img_1.png)
 
 ## EDA 구성요소 및 장단점
 
@@ -107,7 +107,7 @@
 - 발행한 이벤트를 **보관**, 적절한 소비자에게 전달될 수 있도록 **라우팅**하는 역할을 담당
 - 대표적인 이벤트 브로커 - Rabbit MQ, 카프카 등
 
-![EDA](img_2.png)
+![EDA](image/img_2.png)
 
 ### EDA 장점
 
