@@ -12,6 +12,7 @@
 ### **아키텍처**
 - [EDA (Event Driven Architecture)](Architecture/EDA/README.md)
   - [EDA란?](Architecture/EDA/EDA란.md)
+  - [EDA 구현 방안](Architecture/EDA/EDA%20구현방안.md)
 
 ### 북스터디
 - [함수형 프로그래밍 with 자바](북스터디/함수형%20프로그래밍%20with%20자바/README.md)
